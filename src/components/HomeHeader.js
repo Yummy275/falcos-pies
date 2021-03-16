@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import heroImg from '../images/hero-img.jpg';
 import StdBtn from './StdBtn';
@@ -35,8 +35,11 @@ const Hero = styled.div`
     }
 `;
 
-const WordsHolder = styled.div`
-    background-image: url(${heroImg})
+const WordsHolder = styled.div.attrs((props) => ({
+    style: {
+        transform: `translateY(${props.pos})`,
+    },
+}))`
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -79,10 +82,21 @@ const SubWords = styled.h3`
 `;
 
 const HomeHeader = () => {
+    const [pos, setPos] = useState();
+
+    useEffect(() => {
+        document.addEventListener('scroll', (e) => {
+            let scrolled = document.scrollingElement.scrollTop;
+            if (scrolled < 400) {
+                setPos(scrolled);
+            }
+        });
+    }, []);
+
     return (
         <Container>
             <Hero>
-                <WordsHolder>
+                <WordsHolder pos={`${pos}px`}>
                     <MainWords>
                         Brick oven pizza with a much-talked about crust.
                     </MainWords>
