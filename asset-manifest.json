@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/falcos-pies/static/css/main.aea4c02d.chunk.css",
+    "main.js": "/falcos-pies/static/js/main.27ad9bb7.chunk.js",
+    "main.js.map": "/falcos-pies/static/js/main.27ad9bb7.chunk.js.map",
+    "runtime-main.js": "/falcos-pies/static/js/runtime-main.f6bc509c.js",
+    "runtime-main.js.map": "/falcos-pies/static/js/runtime-main.f6bc509c.js.map",
+    "static/js/2.8e441249.chunk.js": "/falcos-pies/static/js/2.8e441249.chunk.js",
+    "static/js/2.8e441249.chunk.js.map": "/falcos-pies/static/js/2.8e441249.chunk.js.map",
+    "index.html": "/falcos-pies/index.html",
+    "static/css/main.aea4c02d.chunk.css.map": "/falcos-pies/static/css/main.aea4c02d.chunk.css.map",
+    "static/js/2.8e441249.chunk.js.LICENSE.txt": "/falcos-pies/static/js/2.8e441249.chunk.js.LICENSE.txt",
+    "static/media/gallery-five.69b8df2e.jpg": "/falcos-pies/static/media/gallery-five.69b8df2e.jpg",
+    "static/media/gallery-four.dc139d40.jpg": "/falcos-pies/static/media/gallery-four.dc139d40.jpg",
+    "static/media/gallery-one.fa8e382a.jpg": "/falcos-pies/static/media/gallery-one.fa8e382a.jpg",
+    "static/media/gallery-six.cd73395e.jpg": "/falcos-pies/static/media/gallery-six.cd73395e.jpg",
+    "static/media/gallery-thr.b2ae8e9b.jpg": "/falcos-pies/static/media/gallery-thr.b2ae8e9b.jpg",
+    "static/media/gallery-two.25c4c36f.jpg": "/falcos-pies/static/media/gallery-two.25c4c36f.jpg",
+    "static/media/hamburger-menu-icon.976b5194.png": "/falcos-pies/static/media/hamburger-menu-icon.976b5194.png",
+    "static/media/hero-img.13e0b22a.jpg": "/falcos-pies/static/media/hero-img.13e0b22a.jpg",
+    "static/media/home-card-one.0e7c84c8.jpg": "/falcos-pies/static/media/home-card-one.0e7c84c8.jpg",
+    "static/media/home-card-two.4c4f7eac.jpg": "/falcos-pies/static/media/home-card-two.4c4f7eac.jpg",
+    "static/media/insta-icon.bad287d7.png": "/falcos-pies/static/media/insta-icon.bad287d7.png",
+    "static/media/pintrest-icon.2dc6487c.png": "/falcos-pies/static/media/pintrest-icon.2dc6487c.png",
+    "static/media/twitter-icon.9781618b.png": "/falcos-pies/static/media/twitter-icon.9781618b.png",
+    "static/media/yelp-icon.2fd321c1.png": "/falcos-pies/static/media/yelp-icon.2fd321c1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6bc509c.js",
+    "static/js/2.8e441249.chunk.js",
+    "static/css/main.aea4c02d.chunk.css",
+    "static/js/main.27ad9bb7.chunk.js"
+  ]
+}
