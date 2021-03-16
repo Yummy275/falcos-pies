@@ -37,7 +37,8 @@ const Hero = styled.div`
 
 const WordsHolder = styled.div.attrs((props) => ({
     style: {
-        transform: `translateY(${props.pos})`,
+        transform: `translateY(${props.pos}px)`,
+        opacity: `${(100 - props.pos / 4) / 100}`,
     },
 }))`
     width: 60%;
@@ -96,7 +97,7 @@ const HomeHeader = () => {
     return (
         <Container>
             <Hero>
-                <WordsHolder pos={`${pos}px`}>
+                <WordsHolder pos={`${pos}`}>
                     <MainWords>
                         Brick oven pizza with a much-talked about crust.
                     </MainWords>
