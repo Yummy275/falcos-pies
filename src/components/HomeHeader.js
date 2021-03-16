@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import heroImg from '../images/hero-img.jpg';
+import StdBtn from './StdBtn';
 
 const Container = styled.div`
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
 
     @media (min-width: 768px) {
         justify-content: flex-start;
@@ -64,14 +65,6 @@ const SubWords = styled.h3`
     }
 `;
 
-const Btn = styled.button`
-    width: 6rem;
-    height: 2rem;
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin-top: 1rem;
-`;
-
 const HomeHeader = () => {
     return (
         <Container>
@@ -82,7 +75,7 @@ const HomeHeader = () => {
                 </MainWords>
                 <Divider></Divider>
                 <SubWords>Authentic Italian with a modern twist.</SubWords>
-                <Btn>Order Now</Btn>
+                <StdBtn>Order Now</StdBtn>
             </WordsHolder>
         </Container>
     );
