@@ -19,7 +19,7 @@ const Gallery = styled.div`
 
 const SmGallery = styled(Gallery)`
     display: flex;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     @media (min-width: 1024px) {
         display: none;
     }
@@ -28,7 +28,7 @@ const SmGallery = styled(Gallery)`
 const WideGallery = styled(Gallery)`
     display: none;
     max-width: 50rem;
-    margin: 1rem auto;
+    margin: 1.5rem auto 0 auto;
     @media (min-width: 1024px) {
         display: flex;
     }
