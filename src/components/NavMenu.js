@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    position: absolute;
+    position: fixed;
     height: 100%;
+    transition: width 2s linear;
     width: ${(props) => (props.hidden ? '0%' : '100%')};
     z-index: 2;
-    overflow: hidden;
     background-color: #000000eb;
     color: white;
-    transition: width 2s;
 `;
 
 const Options = styled.div`
