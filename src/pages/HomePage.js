@@ -1,8 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import HomeHeader from '../components/HomeHeader';
+import HomeWelcome from '../components/HomeWelcome';
+
 const HomePage = () => {
-    return <HomeHeader></HomeHeader>;
+    return (
+        <>
+            <HomeHeader></HomeHeader>
+            <HomeWelcome></HomeWelcome>
+        </>
+    );
 };
 
 export default HomePage;

@@ -57,7 +57,7 @@ const Divider = styled.div`
     }
 `;
 
-const SubWords = styled.h4`
+const SubWords = styled.h3`
     font-weight: 100;
     @media (min-width: 768px) {
         margin: 1rem 0;
