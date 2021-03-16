@@ -15,15 +15,28 @@ const Container = styled.div`
     }
 `;
 
-const Hero = styled.img`
+const Hero = styled.div`
     min-height: 22rem;
     max-height: 28rem;
     width: 100%;
-    filter: brightness(0.75);
+    background-image: url(${heroImg});
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #00000075;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
 `;
 
 const WordsHolder = styled.div`
-    position: absolute;
+    background-image: url(${heroImg})
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -68,15 +81,16 @@ const SubWords = styled.h3`
 const HomeHeader = () => {
     return (
         <Container>
-            <Hero src={heroImg}></Hero>
-            <WordsHolder>
-                <MainWords>
-                    Brick oven pizza with a much-talked about crust.
-                </MainWords>
-                <Divider></Divider>
-                <SubWords>Authentic Italian with a modern twist.</SubWords>
-                <StdBtn>Order Now</StdBtn>
-            </WordsHolder>
+            <Hero>
+                <WordsHolder>
+                    <MainWords>
+                        Brick oven pizza with a much-talked about crust.
+                    </MainWords>
+                    <Divider></Divider>
+                    <SubWords>Authentic Italian with a modern twist.</SubWords>
+                    <StdBtn>Order Now</StdBtn>
+                </WordsHolder>
+            </Hero>
         </Container>
     );
 };
