@@ -6,6 +6,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     padding: 0 0.5rem;
+
+    @media (min-width: 768px) {
+        justify-content: space-between;
+    }
 `;
 
 const Title = styled.div`
@@ -14,7 +18,8 @@ const Title = styled.div`
     font-size: 3rem;
 
     @media (min-width: 768px) {
-        margin: 0;
+        margin: 0 0 0 0.5rem;
+        font-size: 2rem;
     }
 `;
 
@@ -29,6 +34,8 @@ const MenuIcon = styled.input`
 
 const OptionsHolder = styled.div`
     display: none;
+    justify-content: space-evenly;
+    width: 18rem;
 
     @media (min-width: 768px) {
         display: flex;
@@ -36,7 +43,7 @@ const OptionsHolder = styled.div`
 `;
 
 const NavOptions = styled.a`
-    font-size: 1rem;
+    font-size: 1.1rem;
 `;
 
 const Navbar = () => {
