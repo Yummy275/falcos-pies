@@ -4,6 +4,10 @@ import menuIcon from '../images/hamburger-menu-icon.png';
 import NavMenu from './NavMenu';
 
 const Container = styled.div`
+    position: fixed;
+    width: 100%;
+    background-color: #f2f3f4;
+    padding: 0.25rem;
     display: flex;
     align-items: center;
     padding: 0 0.5rem;

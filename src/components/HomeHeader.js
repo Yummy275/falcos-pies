@@ -4,7 +4,6 @@ import heroImg from '../images/hero-img.jpg';
 import StdBtn from './StdBtn';
 
 const Container = styled.div`
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +25,7 @@ const Hero = styled.div`
     background-size: 100% 100%;
     background-color: #00000075;
     background-blend-mode: overlay;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;

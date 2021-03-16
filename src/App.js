@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 
 function App() {
+    const PageHolder = styled.div`
+        padding-top: 4rem;
+    `;
+
     const [activePage, setActivePage] = useState('home');
 
     return (
@@ -12,7 +17,9 @@ function App() {
                 activePage={activePage}
                 setActivePage={setActivePage}
             ></Navbar>
-            <HomePage></HomePage>
+            <PageHolder>
+                <HomePage></HomePage>
+            </PageHolder>
         </>
     );
 }
