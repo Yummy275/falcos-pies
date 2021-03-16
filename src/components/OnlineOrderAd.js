@@ -17,6 +17,7 @@ const Words = styled.h2`
 `;
 
 const BlackBtn = styled(StdButton)`
+    margin-top: 0;
     color: white;
     background-color: black;
 `;
