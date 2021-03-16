@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import menuIcon from '../images/hamburger-menu-icon.png';
+import NavMenu from './NavMenu';
 
 const Container = styled.div`
     display: flex;
@@ -43,20 +44,43 @@ const OptionsHolder = styled.div`
 `;
 
 const NavOptions = styled.a`
+    cursor: pointer;
     font-size: 1.1rem;
+    transition: transform 0.4s ease-in;
+
+    :hover {
+        transform: scale(1.2);
+    }
 `;
 
 const Navbar = () => {
+    const [navMenuHidden, setNavMenuHidden] = useState(true);
+
+    const showMenu = () => {
+        setNavMenuHidden(false);
+    };
+
+    const hideMenu = () => {
+        setNavMenuHidden(true);
+    };
+
     return (
-        <Container>
-            <MenuIcon type="image" src={menuIcon}></MenuIcon>
-            <Title>Falco's</Title>
-            <OptionsHolder>
-                <NavOptions>Home</NavOptions>
-                <NavOptions>Menu</NavOptions>
-                <NavOptions>Contact</NavOptions>
-            </OptionsHolder>
-        </Container>
+        <>
+            <NavMenu hidden={navMenuHidden} hideMenu={hideMenu}></NavMenu>
+            <Container>
+                <MenuIcon
+                    onClick={showMenu}
+                    type="image"
+                    src={menuIcon}
+                ></MenuIcon>
+                <Title>Falco's</Title>
+                <OptionsHolder>
+                    <NavOptions>Home</NavOptions>
+                    <NavOptions>Menu</NavOptions>
+                    <NavOptions>Contact</NavOptions>
+                </OptionsHolder>
+            </Container>
+        </>
     );
 };
 
