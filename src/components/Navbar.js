@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import menuIcon from '../images/hamburger-menu-icon.png';
 import NavMenu from './NavMenu';
@@ -20,7 +20,8 @@ const Container = styled.div`
 const Title = styled.div`
     margin-left: 1.5rem;
     font-style: italic;
-    font-size: 3rem;
+    transition: font-size 0.2s ease-in;
+    font-size: ${(props) => (props.pos === 'top' ? '3rem' : '2rem')};
 
     @media (min-width: 768px) {
         margin: 0 0 0 0.5rem;
@@ -64,6 +65,7 @@ const NavOption = styled.a`
 
 const Navbar = ({ activePage, setActivePage }) => {
     const [navMenuHidden, setNavMenuHidden] = useState(true);
+    const [pos, setPos] = useState('top');
 
     const showMenu = () => {
         setNavMenuHidden(false);
@@ -72,6 +74,17 @@ const Navbar = ({ activePage, setActivePage }) => {
     const hideMenu = () => {
         setNavMenuHidden(true);
     };
+
+    useEffect(() => {
+        document.addEventListener('scroll', (e) => {
+            let scrolled = document.scrollingElement.scrollTop;
+            if (scrolled >= 300) {
+                setPos('moved');
+            } else {
+                setPos('top');
+            }
+        });
+    }, []);
 
     return (
         <>
@@ -87,7 +100,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                     type="image"
                     src={menuIcon}
                 ></MenuIcon>
-                <Title>Falco's</Title>
+                <Title pos={pos}>Falco's</Title>
                 <OptionsHolder>
                     <NavOption
                         activePage={activePage}

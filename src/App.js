@@ -4,11 +4,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 
-function App() {
-    const PageHolder = styled.div`
-        padding-top: 4rem;
-    `;
+const PageHolder = styled.div`
+    padding-top: 4rem;
+`;
 
+function App() {
     const [activePage, setActivePage] = useState('home');
 
     return (
