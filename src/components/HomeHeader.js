@@ -38,7 +38,7 @@ const Hero = styled.div`
 const WordsHolder = styled.div.attrs((props) => ({
     style: {
         transform: `translateY(${props.pos}px)`,
-        opacity: `${(100 - props.pos / 4) / 100}`,
+        opacity: `${props.pos > 400 ? 0 : (100 - props.pos / 4) / 100}`,
     },
 }))`
     width: 60%;
