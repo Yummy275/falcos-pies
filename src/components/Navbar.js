@@ -43,17 +43,22 @@ const OptionsHolder = styled.div`
     }
 `;
 
-const NavOptions = styled.a`
+const NavOption = styled.a`
     cursor: pointer;
     font-size: 1.1rem;
-    transition: transform 0.4s ease-in;
+    transition: transform 0.2s ease-in;
 
     :hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
+
+    ${(props) =>
+        props.activePage === props.option
+            ? 'border-bottom: 2px solid grey'
+            : ''}
 `;
 
-const Navbar = () => {
+const Navbar = ({ activePage, setActivePage }) => {
     const [navMenuHidden, setNavMenuHidden] = useState(true);
 
     const showMenu = () => {
@@ -66,7 +71,12 @@ const Navbar = () => {
 
     return (
         <>
-            <NavMenu hidden={navMenuHidden} hideMenu={hideMenu}></NavMenu>
+            <NavMenu
+                hidden={navMenuHidden}
+                hideMenu={hideMenu}
+                activePage={activePage}
+                setActivePage={setActivePage}
+            ></NavMenu>
             <Container>
                 <MenuIcon
                     onClick={showMenu}
@@ -75,9 +85,33 @@ const Navbar = () => {
                 ></MenuIcon>
                 <Title>Falco's</Title>
                 <OptionsHolder>
-                    <NavOptions>Home</NavOptions>
-                    <NavOptions>Menu</NavOptions>
-                    <NavOptions>Contact</NavOptions>
+                    <NavOption
+                        activePage={activePage}
+                        option="home"
+                        onClick={() => {
+                            setActivePage('home');
+                        }}
+                    >
+                        Home
+                    </NavOption>
+                    <NavOption
+                        activePage={activePage}
+                        option="menu"
+                        onClick={() => {
+                            setActivePage('menu');
+                        }}
+                    >
+                        Menu
+                    </NavOption>
+                    <NavOption
+                        activePage={activePage}
+                        option="contact"
+                        onClick={() => {
+                            setActivePage('contact');
+                        }}
+                    >
+                        Contact
+                    </NavOption>
                 </OptionsHolder>
             </Container>
         </>

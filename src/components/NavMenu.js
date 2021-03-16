@@ -26,16 +26,42 @@ const Close = styled.a`
 
 const Option = styled.a`
     font-size: 1.1rem;
+    ${(props) =>
+        props.activePage === props.option ? 'font-weight: bold;' : ''}
 `;
 
-const NavMenu = ({ hidden, hideMenu }) => {
+const NavMenu = ({ hidden, hideMenu, activePage, setActivePage }) => {
     return (
         <Container hidden={hidden}>
             <Options>
                 <Close onClick={hideMenu}>X</Close>
-                <Option>Home</Option>
-                <Option>Menu</Option>
-                <Option>Contact</Option>
+                <Option
+                    activePage={activePage}
+                    option="home"
+                    onClick={() => {
+                        setActivePage('home');
+                    }}
+                >
+                    Home
+                </Option>
+                <Option
+                    activePage={activePage}
+                    option="menu"
+                    onClick={() => {
+                        setActivePage('menu');
+                    }}
+                >
+                    Menu
+                </Option>
+                <Option
+                    activePage={activePage}
+                    option="contact"
+                    onClick={() => {
+                        setActivePage('contact');
+                    }}
+                >
+                    Contact
+                </Option>
             </Options>
         </Container>
     );
