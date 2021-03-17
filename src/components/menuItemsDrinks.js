@@ -1,4 +1,3 @@
-import { getDefaultNormalizer } from '@testing-library/dom';
 import MenuItem from './MenuItem';
 
 const menuItemsDrinks = [

@@ -38,6 +38,7 @@ const NavMenu = ({ hidden, hideMenu, activePage, setActivePage }) => {
                     activePage={activePage}
                     option="home"
                     onClick={() => {
+                        hideMenu();
                         setActivePage('home');
                     }}
                 >
@@ -47,6 +48,7 @@ const NavMenu = ({ hidden, hideMenu, activePage, setActivePage }) => {
                     activePage={activePage}
                     option="menu"
                     onClick={() => {
+                        hideMenu();
                         setActivePage('menu');
                     }}
                 >
@@ -56,6 +58,7 @@ const NavMenu = ({ hidden, hideMenu, activePage, setActivePage }) => {
                     activePage={activePage}
                     option="contact"
                     onClick={() => {
+                        hideMenu();
                         setActivePage('contact');
                     }}
                 >

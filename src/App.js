@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
+import ContactPage from './pages/ContactPage';
 
 const PageHolder = styled.div`
     padding-top: 4rem;
@@ -23,6 +24,8 @@ function App() {
                     <HomePage></HomePage>
                 ) : activePage === 'menu' ? (
                     <MenuPage></MenuPage>
+                ) : activePage === 'contact' ? (
+                    <ContactPage></ContactPage>
                 ) : (
                     ''
                 )}

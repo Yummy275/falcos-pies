@@ -9,8 +9,6 @@ import menuItemsPasta from '../components/menuItemsPasta';
 import menuItemsDrinks from '../components/menuItemsDrinks';
 import Footer from '../components/Footer';
 
-const Container = styled.div``;
-
 const Divider = styled.div`
     height: 1px;
     margin: 2rem auto 1rem auto;
@@ -19,7 +17,7 @@ const Divider = styled.div`
 
 const MenuPage = () => {
     return (
-        <Container>
+        <>
             <TextWithDivider word="Menu"></TextWithDivider>
             <MenuSectionContainer>
                 <MenuSectionIntro
@@ -52,7 +50,7 @@ const MenuPage = () => {
                 {menuItemsDrinks}
             </MenuSectionContainer>
             <Footer></Footer>
-        </Container>
+        </>
     );
 };
 
