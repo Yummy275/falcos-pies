@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import TextWithDivider from '../components/TextWithDivider';
 import MenuSectionIntro from '../components/MenuSectionIntro';
-import MenuItem from '../components/MenuItem';
 import MenuSectionContainer from '../components/MenuSection';
+import menuItemsSpPizza from '../components/menuItemsSpPizza';
 
 const Container = styled.div``;
 
@@ -16,11 +16,7 @@ const MenuPage = () => {
                     title="Specialty Pizzas"
                     body="All specialty pies are cooked to order in small, medium and large sizes"
                 ></MenuSectionIntro>
-                <MenuItem
-                    name="Margherita"
-                    price="$12 | $16 | $22"
-                    details="Add your specialty toppings here"
-                ></MenuItem>
+                {menuItemsSpPizza}
             </MenuSectionContainer>
         </Container>
     );

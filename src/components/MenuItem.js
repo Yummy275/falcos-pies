@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 `;
 
 const MainDetailsHolder = styled.div`
@@ -22,7 +22,9 @@ const Price = styled.h3`
     margin-bottom: 0.25rem;
 `;
 
-const Details = styled.p``;
+const Details = styled.p`
+    font-size: 0.75rem;
+`;
 
 const MenuItem = ({ name, price, details }) => {
     return (
