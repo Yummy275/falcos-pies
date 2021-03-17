@@ -11,6 +11,12 @@ import Footer from '../components/Footer';
 
 const Container = styled.div``;
 
+const Divider = styled.div`
+    height: 1px;
+    margin: 2rem auto 1rem auto;
+    background-color: gray;
+`;
+
 const MenuPage = () => {
     return (
         <Container>
@@ -21,6 +27,7 @@ const MenuPage = () => {
                     body="All specialty pies are cooked to order in small, medium and large sizes"
                 ></MenuSectionIntro>
                 {menuItemsSpPizza}
+                <Divider></Divider>
                 <MenuSectionIntro
                     title="Build Your Own Pizzas"
                     body="Smokin' Hot Meats -
@@ -31,11 +38,13 @@ const MenuPage = () => {
                     olives"
                 ></MenuSectionIntro>
                 {menuItemsBuild}
+                <Divider></Divider>
                 <MenuSectionIntro
                     title="Entrees"
                     body="Pasta Mains"
                 ></MenuSectionIntro>
                 {menuItemsPasta}
+                <Divider></Divider>
                 <MenuSectionIntro
                     title="Drinks"
                     body="Alcoholic, non alcoholic"
