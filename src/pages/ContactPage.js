@@ -4,6 +4,8 @@ import OnlineOrderAd from '../components/OnlineOrderAd';
 import TextWithDivider from '../components/TextWithDivider';
 import GrayBar from '../components/GrayBar';
 import ContactUsEmailForm from '../components/ContactUsEmailForm';
+import ContactLocationAndHours from '../components/ContactLocationAndHours';
+import Footer from '../components/Footer';
 
 const Container = styled.div``;
 
@@ -15,6 +17,8 @@ const ContactPage = () => {
             <GrayBar>
                 <ContactUsEmailForm></ContactUsEmailForm>
             </GrayBar>
+            <ContactLocationAndHours></ContactLocationAndHours>
+            <Footer></Footer>
         </Container>
     );
 };

@@ -85,13 +85,19 @@ const SubWords = styled.h3`
 const HomeHeader = () => {
     const [pos, setPos] = useState();
 
+    const scrollWatcher = () => {
+        let scrolled = document.scrollingElement.scrollTop;
+        if (scrolled < 400) {
+            setPos(scrolled);
+        }
+    };
+
     useEffect(() => {
-        document.addEventListener('scroll', (e) => {
-            let scrolled = document.scrollingElement.scrollTop;
-            if (scrolled < 400) {
-                setPos(scrolled);
-            }
-        });
+        document.addEventListener('scroll', scrollWatcher);
+
+        return () => {
+            document.removeEventListener('scroll', scrollWatcher);
+        };
     }, []);
 
     return (
