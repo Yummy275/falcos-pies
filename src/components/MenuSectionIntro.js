@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div``;
+const Container = styled.div`
+    margin-top: 2rem;
+`;
 
 const SecTitle = styled.h2`
     color: #636363;

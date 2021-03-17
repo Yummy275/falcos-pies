@@ -3,7 +3,7 @@ import HomeHeader from '../components/HomeHeader';
 import HomeWelcome from '../components/HomeWelcome';
 import HomeGallery from '../components/HomeGallery';
 import HomeSocial from '../components/HomeSocial';
-import GrayBar from '../components/GrayBar';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
     return (
@@ -12,11 +12,7 @@ const HomePage = () => {
             <HomeWelcome></HomeWelcome>
             <HomeGallery></HomeGallery>
             <HomeSocial></HomeSocial>
-            <GrayBar>
-                <div style={{ padding: '3rem', textAlign: 'center' }}>
-                    Mock site made by Humberto Gonzalez.
-                </div>
-            </GrayBar>
+            <Footer></Footer>
         </>
     );
 };
