@@ -35,9 +35,7 @@ const SecTitle = styled.h3`
     margin: 0.75rem 0;
 `;
 
-const Words = styled.p`
-    color: #636363;
-`;
+const Words = styled.p``;
 
 const WelcomeCard = ({ image, title, words, reversedFlex }) => {
     return (

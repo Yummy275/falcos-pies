@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
+import MenuPage from './pages/MenuPage';
 
 const PageHolder = styled.div`
     padding-top: 4rem;
@@ -18,7 +19,13 @@ function App() {
                 setActivePage={setActivePage}
             ></Navbar>
             <PageHolder>
-                <HomePage></HomePage>
+                {activePage === 'home' ? (
+                    <HomePage></HomePage>
+                ) : activePage === 'menu' ? (
+                    <MenuPage></MenuPage>
+                ) : (
+                    ''
+                )}
             </PageHolder>
         </>
     );
