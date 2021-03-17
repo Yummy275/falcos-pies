@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/falcos-pies/static/css/main.aea4c02d.chunk.css",
-    "main.js": "/falcos-pies/static/js/main.27ad9bb7.chunk.js",
-    "main.js.map": "/falcos-pies/static/js/main.27ad9bb7.chunk.js.map",
+    "main.css": "/falcos-pies/static/css/main.d8304356.chunk.css",
+    "main.js": "/falcos-pies/static/js/main.c4b0f0ee.chunk.js",
+    "main.js.map": "/falcos-pies/static/js/main.c4b0f0ee.chunk.js.map",
     "runtime-main.js": "/falcos-pies/static/js/runtime-main.f6bc509c.js",
     "runtime-main.js.map": "/falcos-pies/static/js/runtime-main.f6bc509c.js.map",
     "static/js/2.8e441249.chunk.js": "/falcos-pies/static/js/2.8e441249.chunk.js",
     "static/js/2.8e441249.chunk.js.map": "/falcos-pies/static/js/2.8e441249.chunk.js.map",
     "index.html": "/falcos-pies/index.html",
-    "static/css/main.aea4c02d.chunk.css.map": "/falcos-pies/static/css/main.aea4c02d.chunk.css.map",
+    "static/css/main.d8304356.chunk.css.map": "/falcos-pies/static/css/main.d8304356.chunk.css.map",
     "static/js/2.8e441249.chunk.js.LICENSE.txt": "/falcos-pies/static/js/2.8e441249.chunk.js.LICENSE.txt",
     "static/media/gallery-five.69b8df2e.jpg": "/falcos-pies/static/media/gallery-five.69b8df2e.jpg",
     "static/media/gallery-four.dc139d40.jpg": "/falcos-pies/static/media/gallery-four.dc139d40.jpg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6bc509c.js",
     "static/js/2.8e441249.chunk.js",
-    "static/css/main.aea4c02d.chunk.css",
-    "static/js/main.27ad9bb7.chunk.js"
+    "static/css/main.d8304356.chunk.css",
+    "static/js/main.c4b0f0ee.chunk.js"
   ]
 }
