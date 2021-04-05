@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/falcos-pies/static/css/main.d8304356.chunk.css",
-    "main.js": "/falcos-pies/static/js/main.c4b0f0ee.chunk.js",
-    "main.js.map": "/falcos-pies/static/js/main.c4b0f0ee.chunk.js.map",
+    "main.js": "/falcos-pies/static/js/main.13a0b4b1.chunk.js",
+    "main.js.map": "/falcos-pies/static/js/main.13a0b4b1.chunk.js.map",
     "runtime-main.js": "/falcos-pies/static/js/runtime-main.f6bc509c.js",
     "runtime-main.js.map": "/falcos-pies/static/js/runtime-main.f6bc509c.js.map",
     "static/js/2.8e441249.chunk.js": "/falcos-pies/static/js/2.8e441249.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.f6bc509c.js",
     "static/js/2.8e441249.chunk.js",
     "static/css/main.d8304356.chunk.css",
-    "static/js/main.c4b0f0ee.chunk.js"
+    "static/js/main.13a0b4b1.chunk.js"
   ]
 }
