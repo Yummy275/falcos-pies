@@ -106,6 +106,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                         activePage={activePage}
                         option="home"
                         onClick={() => {
+                            window.scrollTo(0, 0);
                             setActivePage('home');
                         }}
                     >
@@ -115,6 +116,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                         activePage={activePage}
                         option="menu"
                         onClick={() => {
+                            window.scrollTo(0, 0);
                             setActivePage('menu');
                         }}
                     >
@@ -124,6 +126,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                         activePage={activePage}
                         option="contact"
                         onClick={() => {
+                            window.scrollTo(0, 0);
                             setActivePage('contact');
                         }}
                     >
